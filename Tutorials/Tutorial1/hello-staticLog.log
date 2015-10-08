@@ -1,0 +1,14 @@
+execve("./hello-static", ["./hello-static"], [/* 59 vars */]) = 0
+uname({sys="Linux", node="comp2406-3000", ...}) = 0
+brk(0)                                  = 0x955d000
+brk(0x955dd40)                          = 0x955dd40
+set_thread_area({entry_number:-1 -> 6, base_addr:0x955d840, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1}) = 0
+readlink("/proc/self/exe", "/home/student/Desktop/COMP3000A/"..., 4096) = 64
+brk(0x957ed40)                          = 0x957ed40
+brk(0x957f000)                          = 0x957f000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+fstat64(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7795000
+write(1, "Hello world!\n", 13)          = 13
+exit_group(0)                           = ?
++++ exited with 0 +++
